@@ -26,14 +26,14 @@ int main(void) {
       printf("Voce ira fazer uma questao de matematica.\n");
       printf("Qual o resultado da seguinte conta: x² - x² + x(2 * 5) = 100");
       printf("\nDigite o Valor aqui: ");
-      if (scanf("%d", &res_m) == 10) { // Correção 1
-        if (res == 100) {              // Correção 2
+      if (scanf("%d", &res_m) == 10) {
+        if (res == 100) {
           printf("Correto\n");
         } else {
           printf("Errado\n");
         }
       } else {
-        printf("Entrada inválida\n"); // Correção 3
+        printf("Entrada inválida\n");
       }
       break;
 
@@ -72,7 +72,7 @@ int main(void) {
       } else if (res_1l != 'b') {
         printf("Voce errou");
       }
-      break; // Correção 4
+      break;
       break;
 
     case '3':
@@ -86,31 +86,31 @@ int main(void) {
       al = pow(al, 2);
       imc = ps / al;
 
-      if (imc < 18.5) { // Correção 5
+      if (imc < 18.5) {
         printf("\nVoce esta abaixo do peso!, tenha uma alimentacao mais "
                "saudavel.\n");
-      } else if (imc <= 24.9) { // Correção 6
+      } else if (imc <= 24.9) {
         printf("\nVoce esta no peso ideal, Muito bem.\n");
-      } else if (imc <= 29.9) { // Correção 7
+      } else if (imc <= 29.9) {
         printf("\nVoce esta com sobrepeso, Tome cuidado.\n");
       } else {
         printf("\nVoce esta obeso, Por favor trate de cuidar de sua saude.\n");
       }
       printf("\nDeseja voltar ao Menu?\nSe sim, digite (0), se nao, digite "
-             "qualquer tecla para encerrar.\n"); // Correção 8
-      scanf(" %c", &r);                          // Correção 9
-      if (r == '0') {                            // Correção 10
+             "qualquer tecla para encerrar.\n");
+      scanf(" %c", &r);
+      if (r == '0') {
         break;
       } else {
         printf("Encerrando Código!!\n");
-        return 0; // Correção 11
+        return 0;
       }
 
-    case '0': // Correção 12
+    case '0':
       return 0;
 
     default:
-      printf("\nOpção Inválida\n\n"); // Correção 13
+      printf("\nOpção Inválida\n\n");
       break;
     }
   } while (ch != 4);
